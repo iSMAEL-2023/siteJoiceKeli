@@ -1,0 +1,36 @@
+.galeria{
+    margin: 3em 10%;
+    padding: 1em 1em;
+}
+.galeria-titulo{
+    font-size: 12px;
+    padding-bottom: 1em;
+    text-align: center; 
+}
+.swiper{
+    width: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-pagination{
+    display: none;
+} 
+
+@media screen and (min-width:1024px){
+    .galeria{
+        width: 65%;
+        margin: 3em auto;
+    }
+    .galeria-titulo{
+        font-size: 20px;
+    }
+    .swiper{
+        width: 80%;
+    }
+    .swiper-pagination{
+        display: block;
+    } 
+
+
+}

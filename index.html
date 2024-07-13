@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joice Keli</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto+Slab:wght@200;300;400 & display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="home">
+       
+        <img src="assets/logo1.png" class="logo-home">
+        <h1 class="slogan">comida caseira feita com amor</h1>
+        <a href="#cabecalho-ancora" class="botao__saiba-mais hvr-float-shadow">SAIBA MAIS</a>
+
+    </section>
+    
+    <header class="cabecalho" id="cabecalho-ancora">
+        <div class="menu__topo">
+            <div class="container">
+                    <input type="checkbox" id="menu" class="container__botao">
+                    <label for="menu" class="container__rotulo">
+                        <span class="menu__topo-hamburguer container__imagem"></span>
+                    </label>
+                    <ul class="lista-menu">
+                        <li class="lista-menu__item">
+                            <a href="#sobremim-ancora" class="lista-menu__link">Sobre Mim</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#galeria-ancora" class="lista-menu__link">Galeria</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#contato-ancora" class="lista-menu__link">Contato</a>
+                        </li>
+                    </ul>
+            </div>
+            <img src="assets/logopeq.png" class="logo-cabecalho">
+            <div class="container-desktop">
+                <a href="#sobremim-ancora" class="container-desktop__botao hvr-underline-from-center">Sobre Mim</a>
+                <a href="#galeria-ancora" class="container-desktop__botao hvr-underline-from-center">Galeria</a>
+                <a href="#contato-ancora" class="container-desktop__botao hvr-underline-from-center">Contato</a>
+            </div>
+            <a href="https://wa.me/5561993531118" class="whatsapp"><img src="assets/iconewhatss.png" class="container__imagem"></a>
+        </div>
+       
+    </header>
+    
+
+    <section class="sobremim" id="sobremim-ancora">
+        <div class="sobremim__card estilo-card">
+            <img src="assets/joice1.png" class="sobremim__card-foto">
+            <p class="sobremim__card-texto"> Olá! Sou a Joice Keli. Gaúcha, natural de Rosário do Sul e atualmente resido em Brasília-DF. Tenho 53 anos e amo cozinhar .Gosto de desafios, acredito no meu potencial e na minha vocação culinária. Vou cozinhar para você e seus convidados com muito amor e dedicação.</p>
+        </div>
+        <div class="servicos estilo-card">
+            <img src="assets/servicos.svg" class="servicos-img">
+            <ul class="servicos-descricao">
+                <li class="servicos-descricao__item">Comida congelada</li>
+                <li class="servicos-descricao__item">Bolos e doces</li>
+                <li class="servicos-descricao__item">Eventos no geral</li>
+                <li class="servicos-descricao__item">Datas comemorativas</li>
+                <li class="servicos-descricao__item">Do trivial ao sofisticado</li>
+            </ul>
+        </div>
+
+    </section> 
+
+    <section class="galeria estilo-card" id="galeria-ancora">
+        <p class="galeria-titulo">
+            Hummm,<br> Confira abaixo alguns dos meus trabalhos!
+        </p>
+
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                 <div class="swiper-slide"><img src="galeria/slide1.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide2.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide3.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide4.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide5.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide6.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide7.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide8.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide9.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide10.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide11.png"></div>
+                 <div class="swiper-slide"><img src="galeria/slide12.png"></div>
+            </div>
+        </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+     <script>
+         const swiper = new Swiper('.swiper', {
+         autoplay:{
+             delay:4000,
+         },
+
+         spaceBetween: 10,
+
+         slidesPerView: 1,
+
+         pagination:{
+             el: '.swiper-pagination',
+             type: 'bullets',
+         },
+
+         effect:'coverflow',
+         coverflowEffect:{
+            rotate:50,
+         },
+         
+        });
+     </script> 
+
+    </section>
+
+    <section class="contatos estilo-card" id="contato-ancora">
+        <div class="contatos-texto">
+            <p>61 992278935</p>
+            <p>61 993531118</p>
+            <p>@joicekeli.comidacaserira</p>
+            <p>joicekeli.comidacaseira@gmail.com</p>
+        </div>
+        <div class="contatos-icone">
+            <ul>
+                <li>
+                    <img src="assets/telefone.svg" class="contatos-icone-icn">
+                </li>
+                <li>
+                    <a href="https://wa.me/5561993531118"><img src="assets/whatsapp.svg" class="contatos-icone-icn"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/joicekeli.comidacaseira/">
+                        <img src="assets/Instagram.svg" class="contatos-icone-icn">
+                    </a>
+                </li>
+                <li>
+                    <img src="assets/email.svg" class="contatos-icone-icn">
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <p class="footer-texto">Criado por Ismael</p>
+    </section>
+
+
+</body>
+</html>
