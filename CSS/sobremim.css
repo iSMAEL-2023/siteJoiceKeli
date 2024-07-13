@@ -33,7 +33,7 @@
     width: 17vw;
 }
 .servicos-descricao__item{
-    line-height: 3em;
+    line-height: 2em;
 }
 
 @media screen and (min-width:1024px){
